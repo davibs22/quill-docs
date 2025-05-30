@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-Quill is an Artificial Intelligence agent specialized in Git that automatically analyzes your code changes and generates clear, standardized and contextual commit messages, improving your project's documentation and traceability.
+Quill is an **AI agent specialized in Git**. It inspects your staged changes and generates **concise, conventional and contextual** commit messages, boosting your project’s documentation and traceability.
 
 ## Getting Started
 To start using Quill, follow these steps:
@@ -18,9 +18,28 @@ go mod tidy
 ```
 3. Build Quill:
 ```bash
-go build
+go build -o quill
 ```
 4. Run quill:
 ```bash
 ./quill
+```
+
+## Usage
+To use Quill, follow these steps:
+1. Stage your changes:
+```bash
+git add .
+```
+2. Run Quill:
+```bash
+./quill
+```
+3. Output:
+```bash
+feat(): add new feature
+```
+4. Commit your changes:
+```bash
+git commit -m "feat(): add new feature"
 ```
